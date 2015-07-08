@@ -16,7 +16,7 @@ plot(house_power$date_time, house_power$Sub_metering_1, type="l", col="black", x
      ylab="Energy sub metering")
 lines(house_power$date_time, house_power$Sub_metering_2, col="red")
 lines(house_power$date_time, house_power$Sub_metering_3, col="blue")
-legend ("topright", border= "null", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1,
+legend ("topright", bty="n", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1,
         col=c("black", "red", "blue"))
 plot (house_power$date_time, house_power$Global_reactive_power, type="l",
       xlab="datetime", ylab="Global_reactive_power")
