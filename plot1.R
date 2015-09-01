@@ -4,6 +4,6 @@ house_power <- read.csv.sql("./household_power_consumption.txt",
                             sep=";",
                             header=TRUE)
 png (filename= "plot1.png", width=480, height=480, bg="white")
-hist (house_power$Global_active_power, main= "Global Active Power", col="red", xlab="Global Active Power (kilowatts",
+hist (house_power$Global_active_power, main= "Global Active Power", col="red", xlab="Global Active Power (kilowatts)",
       ylab="Frequency")
 dev.off()
